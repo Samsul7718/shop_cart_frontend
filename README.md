@@ -60,7 +60,7 @@ Tools: Git, npm
 
 ### Clone the repository
 
-git clone https://github.com/Samsul7718/shop_cart.git
+git clone https://github.com/Samsul7718/shop_cart_frontend.git
 
 
         
