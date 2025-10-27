@@ -65,7 +65,7 @@ const CartPage = () => {
         )}
         {/* Total price */}
         <div className='mt-8 p-5 shadow rounded-lg shadow-sm'>
-            <h2 className='text-xl font-bold'>Total:${total}</h2>
+            <h2 className='text-xl font-bold'>Total:INR {total}</h2>
             <button 
             onClick={handleCheckout}
             className='bg-blue-600 text-white px-6 py-2 rounded-lg mt-4'>

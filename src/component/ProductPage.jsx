@@ -27,7 +27,7 @@ const ProductPage = () => {
             <div className="flex-1"></div>
            <h2 className="text-2xl mb-4 font-bold ">Product Page</h2>
            <Link to="/cart">
-           <button className='bg-sky-400 text-white p-4 m-4'>Go to Cart</button>
+           <button className='bg-sky-400 text-white  p-4 m-4'>Go to Cart</button>
            </Link>
          
         </div>
@@ -42,7 +42,7 @@ const ProductPage = () => {
                     className="object-cover"/>
                     <div className="flex-1">
                     <h3 className="font-medium">{product.name}</h3>
-                     <p>${product.price}</p>
+                     <p>INR {product.price}</p>
                   </div>
                    <button
                      onClick={() => handleCartProduct(product)}
