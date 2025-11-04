@@ -11,11 +11,12 @@ const ProductPage = () => {
   const navigate=useNavigate()
 
     useEffect(()=>{
-    fetch("https://shop-cart-backend-ten.vercel.app/api/product")
+    // fetch("https://shop-cart-backend-ten.vercel.app/api/product")
+     fetch(`${import.meta.env.VITE_API_URL}/api/product`)
     .then(res=>res.json())
     .then(data=>setProducts(data))
     .catch(err=>console.log(err))
-    
+
   },[])
 
   const handleCartProduct=(product)=>{
