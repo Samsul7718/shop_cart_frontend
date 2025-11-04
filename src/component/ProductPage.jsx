@@ -15,6 +15,7 @@ const ProductPage = () => {
     .then(res=>res.json())
     .then(data=>setProducts(data))
     .catch(err=>console.log(err))
+    
   },[])
 
   const handleCartProduct=(product)=>{
