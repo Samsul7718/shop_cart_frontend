@@ -9,7 +9,7 @@ const CartPage = () => {
     console.log("Cart Data:", cart);
 
 
-      const handleCheckout = async () => {
+      const handleCheckout = async (cart, total) => {
     try {
     const response = await fetch("https://shop-cart-backend-ten.vercel.app/api/order", {
         method: "POST",
