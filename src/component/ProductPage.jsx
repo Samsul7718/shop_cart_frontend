@@ -11,7 +11,7 @@ const ProductPage = () => {
   const navigate=useNavigate()
 
     useEffect(()=>{
-    fetch("http://localhost:3000/api/product")
+    fetch("https://shop-cart-backend-ten.vercel.app/api/product")
     .then(res=>res.json())
     .then(data=>setProducts(data))
     .catch(err=>console.log(err))
